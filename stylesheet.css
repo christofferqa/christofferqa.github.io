@@ -1,0 +1,38 @@
+html { overflow-y: scroll; }
+body { font-family: Georgia; margin: 0; }
+
+a { color: #1b4764; text-decoration: none; }
+
+@media (min-width: 768px) {
+  h1 { font-size: 24px; left: 15px; position: absolute; top: 50px; }
+
+  #menu { bottom: 0; font-size: 14px; margin-bottom: 25px; position: fixed; }
+  #menu ul { list-style-type: none; margin: 0; padding: 0; }
+  #menu ul li { clear: left; float: left; position: relative; }
+  #menu ul li a { display: block; margin-right: 15px; padding: 5px 15px 5px 15px; }
+  #menu ul li div { overflow: hidden; position: absolute; top: 0; width: 0; }
+  #menu ul li div a.scroll { color: #ffffff; }
+
+  #content { font-size: 12px; left: 200px; position: absolute; top: 150px; width: 550px; }
+  #content > div { display: none; }
+  #content .active { display: block; }
+  #content img.picture { float: right; width: 150px; }
+
+  #loader { background: #1b4764; bottom: 0; height: 0; overflow: hidden; position: fixed; width: 100%; z-index: 10; }
+  #loader h1 { color: #ffffff; }
+  #loader #selectedItem { position: absolute; }
+  #loader #selectedItem a { background: #ffffff; display: block; font-size: 14px; padding: 5px 15px 5px 30px; }
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 24px; text-align: center; }
+
+  #menu { display: none; }
+
+  #content { font-size: 12px; margin: 0 1em; }
+  #content > div { display: none; }
+  #content .active { display: block; }
+  #content img.picture { float: right; width: 100px; }
+
+  #loader { display: none; }
+}

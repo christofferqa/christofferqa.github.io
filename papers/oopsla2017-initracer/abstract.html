@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practical Initialization Race Detection for JavaScript Web Applications</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Practical Initialization Race Detection for JavaScript Web Applications</h1>
+    <i>Christoffer Quist Adamsen, Anders M&oslash;ller, and Frank Tip</i>
+
+    <p>
+      Event races are a common source of subtle errors in JavaScript web
+      applications. Several automated tools for detecting event races
+      have been developed, but experiments show that their accuracy is
+      generally quite low. We present a new approach that focuses on
+      three categories of event race errors that often appear during
+      the initialization phase of web applications:
+      form-input-overwritten errors, late-event-handler-registration
+      errors, and access-before-definition errors. The approach is
+      based on a dynamic analysis that uses a combination of adverse
+      and approximate execution. Among the strengths of the approach
+      are that it does not require browser modifications, expensive
+      model checking, or static analysis. 
+
+    <p>
+      Modern web applications are written in an event-driven style, in which
+      event handlers execute asynchronously in response to user or system
+      events. The nondeterminism arising from this programming style can
+      lead to pernicious errors. Recent work focuses on detecting event
+      races and classifying them as harmful or harmless. However, since
+      modifying the source code to prevent harmful races can be a difficult
+      and error-prone task, it may be preferable to steer away from the bad
+      executions.
+
+    <p>
+      [ <a href="../bibtex.html#oopsla2017-initracer">BibTeX</a> ]
+  </body>
+</html>
